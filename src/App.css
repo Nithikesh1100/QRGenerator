@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 40%;
+}
+
+h2,h3{
+  color: #F6F6F6;
+}
+
+.App-container {
+  text-align: center;
+  background-color: #D4D7DD;
+  border-radius: 20px;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.qrcontainer {
+  width: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #420000;
+  border-radius: 10px;
+  position: absolute;
+  top: -40%;
+  z-index: 1;
+  height: 200px;
+}
+
+.form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30%;
+  margin-bottom: 10%;
+  gap: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.clearNdownload {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Ensure there's space between the buttons */
+}
+
+.clear, .download {
+  padding: 12px 24px; /* Increase padding for larger button size */
+  font-size: 18px; /* Increase font size for better visibility */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Ensure no underline for download link */
+}
+
+.clear svg, .download svg {
+  width: 30px; /* Increase icon size */
+  height: 30px;
+  margin-right: 8px; /* Add space between icon and text */
+}
+
+.clear:hover, .download:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+
+.errormsg {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  justify-content: center; /* Horizontally center the items */
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  border-style: double;
+  border-color: red;
+  background-color: #ffe6e6; /* Optional: Add a background color to enhance visibility */
+  border-radius: 4px; /* Optional: Add rounded corners for aesthetics */
+}
+
+.errormsg svg {
+  position: absolute;
+  left: 10px; /* Position the icon 10px from the left */
+  width: 24px; /* Set the icon size */
+  height: 24px;
+  fill: red; /* Set the icon color */
+}
